@@ -9,7 +9,13 @@ def main(emoji):
             a[i] = emoji[1]
         else:
             pass
-    print(a)
+
+
+
+    for i in range(len(a)):
+        b
+
+    print(b)
 
 def convert():
     smilingface = "🙂"

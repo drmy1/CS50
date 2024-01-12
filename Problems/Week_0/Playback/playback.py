@@ -1,3 +1,3 @@
-name = input()
+name = str(input()).replace(" ", "...")
 
-print(name, sep="???")
+print(name)

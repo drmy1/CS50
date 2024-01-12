@@ -10,7 +10,6 @@ def convert():
 
 main()
 
-print(convert())
 
 
 

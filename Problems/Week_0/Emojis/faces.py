@@ -3,8 +3,8 @@ def main():
 
 
 def convert():
-    smilingface = 🙂
-    frowningface = 🙁
+    smilingface = "🙂"
+    frowningface = "🙁"
 
 
 

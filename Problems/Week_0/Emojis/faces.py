@@ -10,8 +10,7 @@ def convert():
 
 main()
 
-print(convert([1]))
-
+print(convert())
 
 
 

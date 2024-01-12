@@ -1,7 +1,7 @@
 def main(emoji):
 
     a = str(input())
-    a.replace(":)", emoji[0])
+    a.split(" ")
     print(a)
 
 def convert():

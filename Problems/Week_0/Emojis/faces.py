@@ -1,6 +1,8 @@
 def main(emoji):
 
     a = str(input()).split(" ")
+
+    for i:
     if a[1] == ":)":
         print(a[0], emoji[0])
 

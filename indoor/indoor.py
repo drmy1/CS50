@@ -1,3 +1,1 @@
 sentence = input()
-
-pri

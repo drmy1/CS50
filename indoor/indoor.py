@@ -1,1 +1,1 @@
-sentence = input()
+print(input().lower())

@@ -10,12 +10,9 @@ def main(emoji):
         else:
             pass
 
+    a = " ".join(a)
 
-
-    for i in range(len(a)):
-        a[i] = a[i] + a[()]
-
-    print(b)
+    print(a)
 
 def convert():
     smilingface = "🙂"

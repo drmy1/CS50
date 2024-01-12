@@ -13,7 +13,7 @@ def main(emoji):
 
 
     for i in range(len(a)):
-        b
+        a[i] = a[i] + a[()]
 
     print(b)
 

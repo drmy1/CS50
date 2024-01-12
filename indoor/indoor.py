@@ -1,2 +1,3 @@
 sentence = input()
 
+pri

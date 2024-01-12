@@ -6,7 +6,7 @@ def main():
 
 
 def dollars_to_float(d):
-    print(d)
+    print(type(d))
 
 
 def percent_to_float(p):

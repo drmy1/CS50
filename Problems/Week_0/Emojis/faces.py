@@ -2,7 +2,7 @@ def main(emoji):
 
     a = str(input()).split(" ")
 
-    for i in range(len(a)-1):
+    for i in a:
         if a[i] == ":)":
             a[i] = emoji[0]
         else:

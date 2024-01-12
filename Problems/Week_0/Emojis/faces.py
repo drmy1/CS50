@@ -2,12 +2,12 @@ def main(emoji):
 
     a = str(input()).split(" ")
 
-    for i:
-    if a[1] == ":)":
-        print(a[0], emoji[0])
-
-    else:
-        print(a[0], emoji[1])
+    for i in range(len(a)-1):
+        if a[i] == ":)":
+            a[i] = emoji[0]
+        else:
+            a[i] = emoji[1]
+    print(len(a))
 
 def convert():
     smilingface = "🙂"

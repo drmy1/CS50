@@ -1,4 +1,4 @@
-greeting = input("Greeting:\n").lower()
+greeting = input("Greeting:\n").lower().lstrip(" ").strip(" ").rstrip("o")
 
 if greeting == "hello":
     print("$0")

@@ -6,7 +6,7 @@ def main():
     elif (time <= 13) & (time >= 12):
         print ("lunch time")
     elif (time <= 19) & (time >= 18):
-        print ("lunch dinner")
+        print ("dinner time")
 
 
 

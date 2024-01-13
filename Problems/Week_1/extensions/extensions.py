@@ -16,12 +16,11 @@ if len(endlist) != 1:
             break
 
     match x:
-        case "jpg" | "jpeg" | "gif" | "png":
-            if x == "jpg":
-                x == "jpeg"
-            else:
-                pass
+        case "gif" | "png":
             print(f"image/{x}")
+
+        case "jpg" | "jpeg":
+            print("image/jpeg")
 
         case "pdf" | "zip":
             print(f"application/{x}")

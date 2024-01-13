@@ -17,6 +17,10 @@ if len(endlist) != 1:
 
     match x:
         case "jpg" | "jpeg" | "gif" | "png":
+            if x == "jpg":
+                x == "jpeg"
+            else:
+                pass
             print(f"image/{x}")
 
         case "pdf" | "zip":

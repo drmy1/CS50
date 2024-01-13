@@ -1,6 +1,6 @@
-greeting = input("Greeting:\n").lower().lstrip(" ").strip(" ").rstrip("o")
+greeting = input("Greeting:\n").lower().lstrip(" ").strip(" ").rstrip("")
 
-if greeting == "hello":
+if greeting.startswith("hello"):
     print("$0")
 elif greeting.startswith("h"):
     print("$20")

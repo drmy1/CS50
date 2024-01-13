@@ -19,7 +19,7 @@ if len(endlist) != 1:
         case "gif" | "png":
             print(f"image/{x}")
 
-        case "jpg" | "jpeg":
+        case "jpg" | "jpe":
             print("image/jpeg")
 
         case "pdf" | "zip":

@@ -1,12 +1,11 @@
 type = input("File name:\n").lower().strip()
 
 
-
 endlist = type.split(".")
 
 if len(endlist) != 1:
 
-    end = endlist[1]
+    end = endlist[len(endlist)-1]
     x = ""
 
     for i in range(len(end)):

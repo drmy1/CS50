@@ -1,4 +1,4 @@
-x = input("What is the Answer to the Great Question of Life, the Universe, and Everything?\n")
+x = input("What is the Answer to the Great Question of Life, the Universe, and Everything?\n").lower().lstrip(" ").rstrip(" ")
 
 match x:
     case "42" | "forty-two" | "forty two":

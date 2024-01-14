@@ -8,22 +8,22 @@ def main():
 
 def is_valid(s):
     s = str(s)
-    
-    
+
+
     last = []
     alnum = []
     for i in range(len(s)):
-        last.append(s[i])        
-    
-    if s.isalnum() == True:       
+        last.append(s[i])
+
+    if s.isalnum() == True:
         if len(s) <= 6:
                 for k in range(len(s)):
                     placeholder = str(s[k])
                     if placeholder.isalpha():
                         alnum.append(1)
                         if k == 0:
-                            pass                        
-                        else: 
+                            pass
+                        else:
                             if ((alnum[k] == 1) & (alnum[k-1] == 1)):
                                 if k == len(s)-1:
                                     return True
@@ -36,13 +36,15 @@ def is_valid(s):
                                     pass
                             else:
                                 return False
-                            
+
                     else:
-                        alnum.append(0) 
+                        alnum.append(0)
                         if k == 0:
                             pass
                         else:
-                            if ((alnum[k-1] == 0) & (alnum[k] == 0)):
+                            if ((last[k-1] == "0") & (alnum[k] == 0)):
+                                    return False
+                            elif ((alnum[k-1] == 0) & (alnum[k] == 0)):
                                 if k == len(s)-1:
                                     return True
                                 else:
@@ -51,21 +53,18 @@ def is_valid(s):
                                 if k == len(s)-1:
                                     return True
                                 else:
-                                    pass    
+                                    pass
                             else:
 
                                 return False
-                                
-                            
-                    
-                           
+
         else:
             return False
-                      
+
     else:
         return False
-        
-        
+
+
 
 if __name__ == "__main__":
 

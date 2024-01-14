@@ -16,7 +16,7 @@ def is_valid(s):
         last.append(s[i])
 
     if s.isalnum() == True:
-        if len(s) <= 6:
+        if (len(s)>2) and (len(s) <=6):
                 for k in range(len(s)):
                     placeholder = str(s[k])
                     if placeholder.isalpha():

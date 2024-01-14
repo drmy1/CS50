@@ -1,13 +1,13 @@
 fruits = [
 
     {"name": "apple" , "calories": "130"},
-    {"name": "avocado", "calories": "50"},
+    {"name": "Avocado", "calories": "50"},
     {"name": "banana", "calories": "110"},
     {"name": "Cantaloupe", "calories": "50"},
     {"name": "grapefruit", "calories": "60"},
     {"name": "grapes", "calories": "90"},
     {"name": "Honeydew Melon", "calories": "50"},
-    {"name": "kiwifruit", "calories": "90"},
+    {"name": "Kiwifruit", "calories": "90"},
     {"name": "lemon", "calories": "15"},
     {"name": "lime", "calories": "20"},
     {"name": "nectarine", "calories": "60"},

@@ -17,10 +17,10 @@ def transform(month):
             date = str(input("Date: "))
 
             if "/" in date:
-                date = date.strip("/")
+                date = date.split("/")
 
             if " " in date:
-                date = date.strip(" ")
+                date = date.split(" ")
 
             m = str(date[0])
             day = date[1]

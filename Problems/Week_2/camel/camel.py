@@ -7,16 +7,17 @@ def main():
     for k in range(len(listc)):
         if k == index[m]:
             snakecase.append("_"+ listc[k])
+            m = m + 1
 
         else:
             snakecase.append(listc[k])
-    
+
     output = "".join(snakecase).lower()
     print(output)
-        
-    
+
+
 def listcut(camelCase):
-    
+
     listcut = []
     for i in range(len(camelCase)):
         listcut.append(camelCase[i])
@@ -27,16 +28,10 @@ def separator(listcut):
     for j in range(len(listcut)):
         cut = str(listcut[j]).strip(",")
         if cut.isupper() == True:
-            index.append(j)       
+            index.append(j)
         else:
             pass
     return index
-
-            
-    
-
-    
-    
 
 if __name__ == "__main__":
     main()

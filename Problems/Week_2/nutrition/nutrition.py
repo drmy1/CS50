@@ -1,5 +1,5 @@
 fruits = [
-    
+
     {"name": "apple" , "calories": "130"},
     {"name": "avocado", "calories": "50"},
     {"name": "banana", "calories": "110"},
@@ -20,11 +20,11 @@ fruits = [
     {"name": "Sweet Cherries", "calories": "100"},
     {"name": "Tangerine", "calories": "50"},
     {"name": "watermelon", "calories": "80"},
-    
+
 ]
 
 name = input("Item: ")
 
 for fruit in fruits:
     if fruit["name"] == name:
-        print(fruit["calories"])
+        print(f"Calories: {fruit['calories']}")

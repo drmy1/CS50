@@ -16,22 +16,19 @@ x = list(menu)
 price = 0
 while True:
     try:
-        order = (input("Item: "))
+        order = (input("Item: ")).title()
         if order in x:
-            
+
             price = price + menu[order]
-            print(price)           
-        
+            print(f"${price}")
+
     except EOFError:
-        print(price)
-        
+        print("\n")
+        break
+
+
     except KeyError:
         pass
-        
+
     except ValueError:
         pass
-    
-    
-    
-    
-

@@ -1,10 +1,11 @@
 def main():
     month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    try:
-        ydm = transform(month)
-        print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}")
-    except:
-        pass
+    while True:
+        try:
+            ydm = transform(month)
+            print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}")
+        except:
+            pass
 
 
 

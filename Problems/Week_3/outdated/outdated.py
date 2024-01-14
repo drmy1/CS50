@@ -14,7 +14,13 @@ def transform(month):
 
     while True:
         try:
-            date = str(input("Date: ").split("/")).split(" ")
+            date = str(input("Date: "))
+
+            if "/" in date:
+                date = date.strip("/")
+
+            if " " in date:
+                date = date.strip(" ")
 
             m = str(date[0])
             day = date[1]

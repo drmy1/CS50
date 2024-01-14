@@ -7,7 +7,10 @@ def main():
     for k in range(len(listc)):
         if k == index[m]:
             snakecase.append("_"+ listc[k])
-            m = m + 1
+            if m + 1 <= len(index):
+                m = m + 1
+            else:
+                pass
 
         else:
             snakecase.append(listc[k])

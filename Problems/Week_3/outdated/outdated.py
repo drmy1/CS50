@@ -4,6 +4,7 @@ def main():
         try:
             ydm = transform(month)
             print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}")
+            break
         except:
             pass
 

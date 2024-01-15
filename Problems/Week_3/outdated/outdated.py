@@ -23,19 +23,21 @@ def split(month):
         year = date[2]
 
         if m.isnumeric() == True:
-            if m <= 12:
+            match m:
+                case "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09":
 
-                if len(day) == 1:
-                    if day.isnumeric() == True:
-                        day = "0" + day
+                    if len(day) == 1:
+                        if day.isnumeric() == True:
+                            day = "0" + day
 
 
-                if len(m) == 1:
-                    m = "0" + m
-                if year.isnumeric() == True:
-                    return (year, m, day)
-            else:
-                pass
+                    if len(m) == 1:
+                        m = "0" + m
+                    if year.isnumeric() == True:
+                        return (year, m, day)
+
+                case _:
+                    split(month)
 
 
 

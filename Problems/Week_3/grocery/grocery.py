@@ -16,12 +16,13 @@ def item_list(grocery_list):
 
         except EOFError:
             x = []
-            for val in grocery_list:
+            grocery_list_sorted = dict(sorted(grocery_list.items()))
+            for val in grocery_list_sorted:
                 x.append(val)
                 for i in range(len(x)):
                     z = x[i]
                     z = str(z).strip("'")
-                print(grocery_list[f"{z}"], f"{z.upper()}")
+                print(grocery_list_sorted[f"{z}"], f"{z.upper()}")
 
 
             break

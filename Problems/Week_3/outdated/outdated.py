@@ -3,7 +3,6 @@ def main():
     while True:
         try:
             ydm = split(month)
-            print(ydm)
             print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}", end="")
             break
         except KeyboardInterrupt:

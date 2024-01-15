@@ -21,7 +21,7 @@ def item_list(grocery_list):
                 for i in range(len(x)):
                     z = x[i]
                     z = str(z).strip("'")
-                print(grocery_list[f"{z}"], f"{z}")
+                print(grocery_list[f"{z}"], f"{z.capitalize()}")
 
 
             break

@@ -1,75 +1,76 @@
 def main():
     month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+    ydm = split(month)
+    print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}", end="")
+
+
+def split(month):
+
     while True:
         try:
-            ydm = split(month)
-            print(f"{ydm[0]}-{ydm[1]}-{ydm[2]}", end="")
-            break
+
+            date = str(input("Date: ")).lstrip(" ").rstrip(" ")
+
+
+            if "/" in date:
+                date = date.split("/")
+                m = str(date[0])
+                day = date[1]
+                year = date[2]
+
+                if int(day) <= 31:
+                    if m.isnumeric() == True:
+                        if int(m) <= 12:
+                            if len(day) == 1:
+                                if day.isnumeric() == True:
+                                    day = "0" + day
+
+
+
+                            if len(m) == 1:
+                                m = "0" + m
+                            if year.isnumeric() == True:
+                                return (year, m, day)
+
+
+
+
+
+
+
+            if " " in date:
+                date = date.split(" ")
+                m = str(date[0])
+                day = date[1]
+                year = date[2]
+
+                if int(day) <= 31:
+                    if m.isalpha() == True:
+                        if "," in day:
+                            day = day.strip(",")
+                            if m in month:
+                                m = str((month.index(m)) + 1)
+                                if len(day) == 1:
+                                    if day.isnumeric() == True:
+                                        day = "0" + day
+                                    else:
+                                        pass
+
+                                if len(m) == 1:
+                                    m = "0" + m
+                                if year.isnumeric() == True:
+                                    return year, m, day
+
+                            else:
+                                pass
+
+                        else:
+                            pass
         except KeyboardInterrupt:
             pass
         except ValueError:
             pass
-
-def split(month):
-
-
-    date = str(input("Date: ")).lstrip(" ").rstrip(" ")
-
-
-    if "/" in date:
-        date = date.split("/")
-        m = str(date[0])
-        day = date[1]
-        year = date[2]
-
-        if m.isnumeric() == True:
-            match m:
-                case "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09":
-
-                    if len(day) == 1:
-                        if day.isnumeric() == True:
-                            day = "0" + day
-
-
-                    if len(m) == 1:
-                        m = "0" + m
-                    if year.isnumeric() == True:
-                        return (year, m, day)
-
-                case _:
-                    split(month)
-
-
-
-
-
-    if " " in date:
-        date = date.split(" ")
-        m = str(date[0])
-        day = date[1]
-        year = date[2]
-
-        if m.isalpha() == True:
-            if "," in day:
-                day = day.strip(",")
-                if m in month:
-                    m = str((month.index(m)) + 1)
-                    if len(day) == 1:
-                        if day.isnumeric() == True:
-                            day = "0" + day
-                        else:
-                            pass
-
-                    if len(m) == 1:
-                        m = "0" + m
-                    if year.isnumeric() == True:
-                        return year, m, day
-
-                else:
-                    pass
-
-            else:
-                pass
 
 
 

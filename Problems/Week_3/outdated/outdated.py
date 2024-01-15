@@ -45,10 +45,11 @@ def split(month):
                 day = date[1]
                 year = date[2]
 
-                if int(day) <= 31:
-                    if m.isalpha() == True:
-                        if "," in day:
-                            day = day.strip(",")
+
+                if m.isalpha() == True:
+                    if "," in day:
+                        day = day.strip(",")
+                        if int(day) <= 31:
                             if m in month:
                                 m = str((month.index(m)) + 1)
                                 if len(day) == 1:
@@ -62,11 +63,6 @@ def split(month):
                                 if year.isnumeric() == True:
                                     return year, m, day
 
-                            else:
-                                pass
-
-                        else:
-                            pass
         except KeyboardInterrupt:
             pass
         except ValueError:

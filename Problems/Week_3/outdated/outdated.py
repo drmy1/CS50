@@ -23,16 +23,19 @@ def split(month):
         year = date[2]
 
         if m.isnumeric() == True:
+            if m <= 12:
 
-            if len(day) == 1:
-                if day.isnumeric() == True:
-                    day = "0" + day
+                if len(day) == 1:
+                    if day.isnumeric() == True:
+                        day = "0" + day
 
 
-            if len(m) == 1:
-                m = "0" + m
-            if year.isnumeric() == True:
-                return (year, m, day)
+                if len(m) == 1:
+                    m = "0" + m
+                if year.isnumeric() == True:
+                    return (year, m, day)
+            else:
+                pass
 
 
 

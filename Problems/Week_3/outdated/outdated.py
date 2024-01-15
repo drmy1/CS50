@@ -13,7 +13,7 @@ def main():
 def split(month):
 
 
-    date = str(input("Date: "))
+    date = str(input("Date: ")).lstrip(" ").rstrip(" ")
 
 
     if "/" in date:

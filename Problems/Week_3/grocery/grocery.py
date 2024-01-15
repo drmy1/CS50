@@ -23,7 +23,8 @@ def item_list(grocery_list):
                     z = str(z).strip("'")
                 print(grocery_list[f"{z}"], f"{z}")
 
-            pass
+
+            break
         except KeyboardInterrupt:
             pass
 
